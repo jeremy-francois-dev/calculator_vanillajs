@@ -1,0 +1,44 @@
+.container {
+    border: solid 1px black;
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(4,1fr);
+    grid-gap: 5px;
+    text-align: center;
+    margin: auto;
+    width: 980px;
+    height: 800px;
+    padding: 5px;
+}
+
+.container > * {
+    color: white;
+    padding: 50px;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: 5%;
+}
+
+#display {
+    grid-column: 1 / -1 ;
+    grid-row: 1 / 3;
+    background-color: beige;
+    color: black;
+    padding: 100px;
+}
+
+#zero, #one, #two, #three, #four, #five,
+ #six, #seven, #eight, #nine {
+     background-color: cornflowerblue;
+ }
+
+ #add, #subtract, #multiply, #divide {
+     background-color: darkseagreen;
+ }
+
+ #clear {
+     background-color: goldenrod;
+ }
+
+ #equal {
+     background-color: brown;
+ }
